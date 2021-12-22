@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/MobilGyakorlas/beadando2/app/src/main/res/layout/activity_main.xml" value="0.13333333333333333" />
+        <entry key="..\:/MobilGyakorlas/beadando2/app/src/main/res/layout/database_row.xml" value="0.13385416666666666" />
+        <entry key="..\:/MobilGyakorlas/beadando2/app/src/main/res/layout/fragment_game.xml" value="0.1" />
+        <entry key="..\:/MobilGyakorlas/beadando2/app/src/main/res/layout/fragment_game_won.xml" value="0.11322463768115942" />
+        <entry key="..\:/MobilGyakorlas/beadando2/app/src/main/res/layout/fragment_rules.xml" value="0.1" />
+        <entry key="..\:/MobilGyakorlas/beadando2/app/src/main/res/layout/fragment_title.xml" value="0.17617753623188406" />
+        <entry key="..\:/MobilGyakorlas/beadando2/app/src/main/res/layout/fragment_title2.xml" value="0.17617753623188406" />
+        <entry key="..\:/MobilGyakorlas/beadando2/app/src/main/res/layout/nav_header.xml" value="0.15625" />
+        <entry key="..\:/MobilGyakorlas/beadando2/app/src/main/res/menu/navdrawer_menu.xml" value="0.13385416666666666" />
+        <entry key="..\:/MobilGyakorlas/beadando2/app/src/main/res/menu/options_menu.xml" value="0.13385416666666666" />
+      </map>
+    </option>
+  </component>
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK" />
+</project>
