@@ -25,6 +25,11 @@ class TitleFragment : Fragment() {
                 .navigate(TitleFragmentDirections.actionTitleFragmentToGameFragment())
         }
 
+        binding.apiButton.setOnClickListener { view: View ->
+            view.findNavController()
+                .navigate(TitleFragmentDirections.actionTitleFragmentToOverviewFragment())
+        }
+
         setHasOptionsMenu(true)
 
         return binding.root

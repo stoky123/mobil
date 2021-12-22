@@ -31,6 +31,7 @@ android {
     }
     compileSdkVersion 30
     defaultConfig {
+        multiDexEnabled true
         applicationId 'com.example.android.navigation'
         minSdkVersion 19
         targetSdkVersion 30
@@ -86,4 +87,12 @@ dependencies {
     // Navigation
     implementation "android.arch.navigation:navigation-fragment-ktx:1.0.0"
     implementation "android.arch.navigation:navigation-ui-ktx:1.0.0"
+
+    // Moshi
+    implementation "com.squareup.moshi:moshi-kotlin:$version_moshi"
+
+    // Retrofit with Moshi Converter
+    implementation "com.squareup.retrofit2:converter-moshi:$version_retrofit"
+
+    implementation 'com.android.support:multidex:1.0.3'
 }
