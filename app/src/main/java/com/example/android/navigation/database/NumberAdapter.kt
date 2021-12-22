@@ -6,20 +6,18 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
+import androidx.recyclerview.widget.DiffUtil
+import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
 
-class NumberAdapter : RecyclerView.Adapter<NumberAdapter.NumberViewHolder>() {
-
-    private var data = emptyList<Number>()
-
-    override fun getItemCount() = data.size
+class NumberAdapter : ListAdapter<Number, NumberAdapter.NumberViewHolder>(NumberDiffCallback())  {
 
     class NumberViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
 
     }
 
     override fun onBindViewHolder(holder: NumberViewHolder, position: Int) {
-        val item = data[position]
+        val item = getItem(position)
         holder.itemView.findViewById<TextView>(R.id.counter_id).text = (position + 1).toString()
         holder.itemView.findViewById<TextView>(R.id.text_input).text = item.numberValue.toString();
 
@@ -36,9 +34,14 @@ class NumberAdapter : RecyclerView.Adapter<NumberAdapter.NumberViewHolder>() {
 
     }
 
-    fun setData(data: List<Number>) {
-        this.data = data
-        notifyDataSetChanged()
+}
+
+class NumberDiffCallback : DiffUtil.ItemCallback<Number>() {
+    override fun areItemsTheSame(oldItem: Number, newItem: Number): Boolean {
+        return oldItem.numberId == newItem.numberId
     }
 
+    override fun areContentsTheSame(oldItem: Number, newItem: Number): Boolean {
+        return oldItem == newItem
+    }
 }
